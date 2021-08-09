@@ -1,0 +1,106 @@
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>convineColumn</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <h5> 動的RowSpanテーブル編</h5>
+        <hr>
+        <div class="row">
+            <div class="col-md mb-3">
+                <button type="button" class="btn-dark" id="CellConbine">結合するぜ！</button>
+            </div>
+        </div>
+        <table class="table table-hover table-bordered" style="width: 960px;">
+            <thead class="table-primary">
+                <tr>
+                    <th>
+                        カラム１
+                    </th>
+                    <th>
+                        カラム２
+                    </th>
+                    <th>
+                        カラム３
+                    </th>
+                    <th>
+                        カラム４
+                    </th>
+                    <th>
+                        カラム５
+                    </th>
+                </tr>
+            </thead>
+            <tbody id = "mainTableBody">
+                    <tr>
+                        <td class="text-center">A1</td><td class="text-center">B1</td><td class="text-center">C1</td><td class="text-center">D1</td><td class="text-center">E1</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A1</td><td class="text-center">B1</td><td class="text-center">C1</td><td class="text-center">D2</td><td class="text-center">E2</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A1</td><td class="text-center">B2</td><td class="text-center">C2</td><td class="text-center">D3</td><td class="text-center">E3</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A1</td><td class="text-center">B2</td><td class="text-center">C2</td><td class="text-center">D4</td><td class="text-center">E4</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A1</td><td class="text-center">B3</td><td class="text-center">C3</td><td class="text-center">D5</td><td class="text-center">E5</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A2</td><td class="text-center">B1</td><td class="text-center">C1</td><td class="text-center">D1</td><td class="text-center">E6</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A2</td><td class="text-center">B1</td><td class="text-center">C1</td><td class="text-center">D2</td><td class="text-center">E7</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A2</td><td class="text-center">B2</td><td class="text-center">C2</td><td class="text-center">D3</td><td class="text-center">E8</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A2</td><td class="text-center">B2</td><td class="text-center">C2</td><td class="text-center">D4</td><td class="text-center">E9</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A2</td><td class="text-center">B3</td><td class="text-center">C3</td><td class="text-center">D5</td><td class="text-center">E10</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A3</td><td class="text-center">B1</td><td class="text-center">C1</td><td class="text-center">D1</td><td class="text-center">E11</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A3</td><td class="text-center">B1</td><td class="text-center">C1</td><td class="text-center">D2</td><td class="text-center">E12</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A3</td><td class="text-center">B2</td><td class="text-center">C2</td><td class="text-center">D3</td><td class="text-center">E13</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A3</td><td class="text-center">B2</td><td class="text-center">C2</td><td class="text-center">D4</td><td class="text-center">E14</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A3</td><td class="text-center">B3</td><td class="text-center">C3</td><td class="text-center">D5</td><td class="text-center">E15</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">A3</td><td class="text-center">B3</td><td class="text-center">C3</td><td class="text-center">D5</td><td class="text-center">E15</td>
+                    </tr>
+
+                </tbody>
+        </table>
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="module">
+        // import { convineColumn as convine } from "./convineColumn.js";
+        // 全部improt
+        import * as convine from "./convineColumn.js";
+
+        const exButton = document.getElementById('CellConbine');
+        exButton.addEventListener('click', event => {
+            const elemCollection = document.getElementById('mainTableBody').children;
+            // convine(Array.from(elemCollection), [0,1,2]);
+            convine.convineColumn(Array.from(elemCollection), [0,1,2]);
+        });
+
+    </script>
+</body>
+</html>
